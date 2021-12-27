@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  /* primary colors */
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  /* neutral colors */
+  --clr-dark-blue-1: hsl(217, 54%, 11%);
+  --clr-dark-blue-2: hsl(216, 50%, 16%);
+  --clr-dark-blue-3: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --radius: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background: var(--clr-dark-blue-1);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  background: var(--clr-dark-blue-1);
+  color: var(--clr-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--clr-dark-blue-2);
+  max-width: 32.5rem;
+  padding: 2.5rem;
+  color: var(--clr-soft-blue);
+  border-radius: var(--radius);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  border-radius: var(--radius);
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  color: var(--clr-white);
+}
+
+.card p {
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.info-value,
+.info-days {
+  display: flex;
+  align-items: center;
+}
+
+.info-value {
+  color: var(--clr-cyan);
+  font-weight: 600;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.info-icon {
+  width: 1rem;
+}
+
+.clock-icon {
+  width: 1.5rem;
+}
+
+.line {
+  background: var(--clr-dark-blue-3);
+  height: 0.1rem;
+  margin: 1.5rem 0;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+
+.creator-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--clr-white);
+  margin-right: 1.2rem;
+}
+
+.creator p {
+  margin: 0;
+}
+
+.creator-name {
+  color: var(--clr-white);
+}
+
+/* 
+Attribution
+ */
+.attribution {
+  color: lightgray;
+  font-size: 1.2rem;
+  text-align: center;
+  background: darkslategray;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  padding: 0.5rem;
+}
+.attribution a {
+  color: white;
+  text-decoration: none;
+  /* font-weight: bold; */
+}

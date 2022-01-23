@@ -12,13 +12,11 @@
   --clr-dark-blue-3: hsl(215, 32%, 27%);
   --clr-white: hsl(0, 0%, 100%);
 
-  --radius: 1rem;
   --transition: all 0.5s ease-in-out;
 }
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,6 +33,7 @@ img {
 
 .container {
   height: 100vh;
+  width: 100vw;
   background: var(--clr-dark-blue-1);
   color: var(--clr-white);
   display: grid;
@@ -42,6 +41,7 @@ img {
   grid-template-rows: auto 2.5rem;
 }
 
+/* Card */
 .card-container {
   display: flex;
   justify-content: center;
@@ -50,27 +50,34 @@ img {
 
 .card {
   background: var(--clr-dark-blue-2);
-  max-width: 32.5rem;
-  padding: 2.5rem;
+  max-width: 32.7rem;
+  padding: 2.4rem;
   color: var(--clr-soft-blue);
-  border-radius: var(--radius);
+  border-radius: 2rem;
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
-.card-img-container {
-  background: var(--clr-cyan);
-  border-radius: var(--radius);
-  overflow: hidden;
+.card-image {
   position: relative;
+  overflow: hidden;
+  display: flex;
+  background: var(--clr-cyan);
+  border-radius: 0.5rem;
 }
 
-.card-img {
+.card-image .photo {
+  position: relative;
   transition: var(--transition);
+  opacity: 1;
 }
 
-.card-img-container:hover .card-img {
+.card-image:hover .photo {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.card-image:hover .view-icon {
+  opacity: 1;
 }
 
 .view-icon {
@@ -79,7 +86,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 5rem;
-  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .card-title {
@@ -156,9 +165,7 @@ img {
   color: var(--clr-white);
 }
 
-/* 
-Attribution
- */
+/* Attribution */
 .attribution {
   color: lightgray;
   font-size: 1.2rem;
@@ -171,5 +178,4 @@ Attribution
 .attribution a {
   color: white;
   text-decoration: none;
-  /* font-weight: bold; */
 }

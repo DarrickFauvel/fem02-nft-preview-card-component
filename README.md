@@ -52,5 +52,5 @@ Around the corners of the image, there is some background color artifacting happ
 
 ## Author
 
-- Website - [darrickfauvel.com](http://www.darrickfauvel.com)
+- Website - [darrickfauvel.com](https://www.darrickfauvel.com)
 - Frontend Mentor - [@DarrickFauvel](https://www.frontendmentor.io/profile/DarrickFauvel)

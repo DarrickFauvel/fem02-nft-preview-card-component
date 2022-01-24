@@ -48,13 +48,14 @@ a:hover {
   color: var(--clr-white);
 }
 
-/* Card */
-.card-container {
+.main.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
+/* Card */
 .card {
   background: var(--clr-dark-blue-2);
   max-width: 32.7rem;

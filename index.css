@@ -105,13 +105,6 @@ a:hover {
   font-size: 2rem;
   font-weight: 600;
   margin: 1.5rem 0;
-  color: var(--clr-white);
-  transition: var(--transition);
-}
-
-.card-title:hover {
-  color: var(--clr-cyan);
-  cursor: pointer;
 }
 
 .card p {

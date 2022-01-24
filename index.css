@@ -46,9 +46,6 @@ a:hover {
   width: 100vw;
   background: var(--clr-dark-blue-1);
   color: var(--clr-white);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 2.5rem;
 }
 
 /* Card */

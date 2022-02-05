@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-html-and-css-eRkDppP-t](https://www.frontendmentor.io/solutions/nft-preview-card-component-html-and-css-eRkDppP-t)
-- Live Site URL: [https://darrickfauvel.github.io/nft-preview-card-component/](https://darrickfauvel.github.io/nft-preview-card-component/)
+- Live Site URL: [https://darrickfauvel.github.io/fem02-nft-preview-card-component/](https://darrickfauvel.github.io/fem02-nft-preview-card-component/)
 
 ## My process
 
